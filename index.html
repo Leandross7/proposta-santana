@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Consultoria Técnica para a Gestão do SUAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --cor-primaria: #0a2463;
+            --cor-secundaria: #3e92cc;
+            --cor-acento: #ff6f61;
+            --cor-texto: #333;
+            --cor-texto-claro: #555;
+            --cor-fundo: #ffffff;
+            --cor-fundo-alternativo: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9ecef;
+            color: var(--cor-texto);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .page-container {
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: 20px auto;
+            background-color: var(--cor-fundo);
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 40px 50px;
+            text-align: right;
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 5px 0 0;
+            color: var(--cor-secundaria);
+        }
+
+        .main-content {
+            padding: 40px 50px;
+            flex-grow: 1;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            border-bottom: 2px solid var(--cor-primaria);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title i {
+            margin-right: 15px;
+            font-size: 1.6rem;
+            color: var(--cor-secundaria);
+        }
+        
+        ul.styled-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.styled-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        
+        ul.styled-list li i {
+            color: var(--cor-secundaria);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        ol.styled-list {
+             list-style: none;
+             counter-reset: styled-counter;
+             padding-left: 0;
+        }
+        
+        ol.styled-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        ol.styled-list li::before {
+            counter-increment: styled-counter;
+            content: counter(styled-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background-color: var(--cor-secundaria);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: 700;
+            line-height: 25px;
+            font-size: 0.9rem;
+        }
+
+        .profile-box {
+            background-color: var(--cor-fundo-alternativo);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .profile-box h3 {
+            margin-top: 0;
+            color: var(--cor-primaria);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        thead th {
+            background-color: var(--cor-primaria);
+            color: white;
+            font-weight: 500;
+        }
+        tbody tr:nth-child(even) {
+            background-color: var(--cor-fundo-alternativo);
+        }
+        
+        .footer {
+            background-color: var(--cor-fundo-alternativo);
+            text-align: center;
+            padding: 20px 50px;
+            font-size: 0.9rem;
+            color: var(--cor-texto-claro);
+            border-top: 1px solid #ddd;
+        }
+        .footer strong {
+            color: var(--cor-primaria);
+        }
+
+        @media print {
+            body { padding: 0; background-color: #fff; }
+            .page-container { box-shadow: none; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <header class="header">
+            <h1>Proposta de Consultoria Estratégica</h1>
+            <p>SUAS na Prática: Organização, Planejamento e Gestão para Equipes Municipais</p>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <p><strong>Para:</strong> Secretaria Municipal de Saúde e Assistência Social de Santana da Boa Vista/RS<br>
+                <strong>A/C:</strong> Secretária Silvia da Silva Carvalho<br>
+                <strong>De:</strong> Leandro Silva da Silva, Consultor em Gestão Pública</p>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-bullseye"></i>Apresentação e Justificativa</h2>
+                <p>A gestão da Política de Assistência Social é dinâmica e complexa, exigindo atualização constante das equipes gestoras. Mudanças na equipe, novas normativas e a evolução dos sistemas de informação representam desafios contínuos para os municípios. A falta de domínio sobre os processos e ferramentas pode comprometer a eficácia das ações e a segurança dos recursos.</p>
+                <p>Uma gestão desorganizada ou desatualizada pode resultar em:</p>
+                <ul class="styled-list">
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--cor-acento);"></i><div><strong>Perda de Prazos e Recursos:</strong> Deixando de receber repasses federais e estaduais por pendências nos sistemas.</div></li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--cor-acento);"></i><div><strong>Baixa Qualidade dos Dados:</strong> Informações incorretas no Cadastro Único, RMA ou SISC impactam o planejamento e a transferência de renda.</div></li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--cor-acento);"></i><div><strong>Insegurança Técnica:</strong> Para a equipe que executa as ações na ponta (CRAS e CREAS).</div></li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--cor-acento);"></i><div><strong>Dificuldades na Prestação de Contas:</strong> Gerando apontamentos dos órgãos de controle.</div></li>
+                </ul>
+                <p>Este projeto de consultoria oferece um suporte técnico especializado para que a equipe gestora possa, a qualquer momento, organizar a estrutura da secretaria, otimizar processos, qualificar o uso dos sistemas e fortalecer o planejamento, garantindo uma base sólida para o trabalho contínuo.</p>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-users"></i>Público-Alvo</h2>
+                <ul class="styled-list">
+                    <li><i class="fas fa-user-check"></i><div>Secretários(as) Municipais de Assistência Social e suas equipes.</div></li>
+                    <li><i class="fas fa-user-check"></i><div>Gestores e coordenadores que assumiram a função recentemente.</div></li>
+                    <li><i class="fas fa-user-check"></i><div>Equipes técnicas que buscam aprimorar seus processos e se atualizar sobre os sistemas do SUAS.</div></li>
+                    <li><i class="fas fa-user-check"></i><div>Coordenadores de Proteção Social Básica (CRAS) e Especial (CREAS).</div></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-flag-checkered"></i>Objetivos</h2>
+                <p><strong>Objetivo Geral:</strong> Assessorar e instrumentalizar a gestão municipal para a organização, planejamento e execução da Política de Assistência Social, em conformidade com as normativas do SUAS, otimizando recursos e qualificando os serviços ofertados à população.</p>
+                <p><strong>Objetivos Específicos:</strong></p>
+                <ul class="styled-list">
+                    <li><i class="fas fa-search-dollar"></i><div>Realizar um diagnóstico completo da situação administrativa, orçamentária e operacional da Secretaria.</div></li>
+                    <li><i class="fas fa-sitemap"></i><div>Estruturar o planejamento orçamentário e financeiro da Assistência Social.</div></li>
+                    <li><i class="fas fa-laptop-code"></i><div>Capacitar a equipe gestora e técnica para o domínio completo das novas plataformas e sistemas do SUAS.</div></li>
+                    <li><i class="fas fa-bullhorn"></i><div>Desenvolver um plano de trabalho com metas e ações prioritárias de curto e médio prazo.</div></li>
+                    <li><i class="fas fa-hands-helping"></i><div>Fortalecer a articulação entre gestão, equipamentos (CRAS/CREAS) e o Conselho Municipal.</div></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-cogs"></i>Metodologia de Trabalho</h2>
+                <p>A consultoria será dividida em 4 fases sequenciais, com encontros presenciais e suporte à distância:</p>
+                <ol class="styled-list">
+                    <li><strong>Diagnóstico Situacional (Imersão e Análise):</strong> Reunião com o(a) gestor(a) e equipe, análise da legislação municipal e do status do CMAS/FMAS, levantamento detalhado nos sistemas federais, análise do orçamento e mapeamento dos serviços.</li>
+                    <li><strong>Planejamento e Organização (Estruturação):</strong> Elaboração do Relatório Diagnóstico, desenvolvimento do Plano de Ação, oficina de Planejamento Orçamentário e desenho de fluxos de trabalho.</li>
+                    <li><strong>Capacitação e Instrumentalização (Foco nos Sistemas):</strong> Treinamento prático e aprofundado nas plataformas essenciais (Portal CadÚnico, SIGPBF, SIBEC, RMA, SISC, CadSUAS, etc.).</li>
+                    <li><strong>Monitoramento e Suporte (Acompanhamento Contínuo):</strong> Reuniões periódicas, suporte técnico à distância e apoio na análise de relatórios para tomada de decisões.</li>
+                </ol>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-archive"></i>Produtos e Entregas</h2>
+                <ol class="styled-list">
+                    <li><strong>Relatório de Diagnóstico Completo</strong> da situação da Assistência Social.</li>
+                    <li><strong>Plano de Ação Estratégico</strong> com metas de curto e médio prazo.</li>
+                    <li><strong>Proposta de Organização Orçamentária</strong> alinhada às normativas.</li>
+                    <li><strong>Equipe técnica com domínio</strong> sobre as novas plataformas e sistemas.</li>
+                    <li><strong>Minutas e modelos</strong> de documentos importantes (Relatórios, Planos de Ação, etc.).</li>
+                    <li><strong>Certificado de participação</strong> nas oficinas de capacitação para a equipe.</li>
+                </ol>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-user-tie"></i>Perfil do Consultor</h2>
+                 <div class="profile-box">
+                    <h3>Leandro Silva da Silva</h3>
+                    <p>Profissional com mais de 8 anos de serviço público, com sólida experiência na gestão da Política de Assistência Social no âmbito municipal, com atuação direta na área orçamentária e no gerenciamento dos sistemas de informação do SUAS. Atualmente atuando, também, como Coordenador do Cadastro Único e Programa Bolsa Família na Prefeitura de Capão do Leão/RS.</p>
+                    <p>Com mais de <strong>150 horas de capacitação avançada</strong>, possuo expertise em:</p>
+                    <ul>
+                        <li><strong>Gestão Orçamentária e Financeira do SUAS:</strong> Domínio completo do ciclo orçamentário (PPA, LDO, LOA), execução de recursos federais e estaduais, e prestação de contas (AgilizaSUAS/BB Gestão Ágil).</li>
+                        <li><strong>Operacionalização de Sistemas Federais:</strong> Especialista em Cadastro Único, SIBEC, SIGPBF, SICON e CadSUAS.</li>
+                        <li><strong>Legislação e Normativas:</strong> Conhecimento aprofundado da Nova Lei de Licitações (14.133/2021) e do Marco Regulatório das OSCs (13.019/2014), incluindo a gestão de emendas parlamentares.</li>
+                        <li><strong>Planejamento e Execução:</strong> Experiência em Vigilância Socioassistencial, formação de equipes e atuação em situações de calamidade.</li>
+                    </ul>
+                    <p>A consultoria oferecida baseia-se não apenas no conhecimento teórico, mas na vivência diária dos desafios enfrentados pelos municípios, garantindo soluções realistas, práticas e eficazes.</p>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-hand-holding-usd"></i>Proposta de Investimento</h2>
+                <p>A contratação é modular, permitindo que o município invista conforme sua necessidade. Valor de referência: **R$ 150,00/hora técnica**.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fase</th>
+                            <th>Descrição</th>
+                            <th>Horas Est.</th>
+                            <th>Investimento (Bruto)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Fase 1</strong></td><td>Diagnóstico Situacional Completo: Análise de documentos, entrevistas, visita técnica e mapeamento de sistemas.</td><td>40h</td><td><strong>R$ 6.000,00</strong></td></tr>
+                        <tr><td><strong>Fase 2</strong></td><td>Planejamento Estratégico: Oficinas para construção do Plano de Ação e organização orçamentária.</td><td>16h</td><td><strong>R$ 2.400,00</strong></td></tr>
+                        <tr><td><strong>Fase 3</strong></td><td>Capacitação Técnica Completa: Inclui 6 módulos de treinamento prático nos sistemas do SUAS.</td><td>21h</td><td><strong>R$ 3.150,00</strong></td></tr>
+                        <tr><td><strong>Fase 4</strong></td><td>Suporte Estratégico Mensal: Contrato de manutenção com reuniões e suporte à distância.</td><td>~10h/mês</td><td><strong>R$ 1.500,00 / mês</strong></td></tr>
+                    </tbody>
+                </table>
+                 <p style="font-size: 0.9rem; color: var(--cor-texto-claro);"><strong>Informações Importantes:</strong> As fases e os módulos da capacitação podem ser contratados de forma independente. O pagamento será realizado via RPA (Recibo de Pagamento a Autônomo), com retenção dos impostos devidos (INSS, IRRF, ISS) pela contratante.</p>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p><strong>Leandro Silva da Silva</strong><br>
+            Consultor em Gestão Pública e Assistência Social<br>
+            <strong>Telefone:</strong> (53) 99965-0342 | <strong>E-mail:</strong> leandrosilva.gestaosocial@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
